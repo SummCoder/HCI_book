@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_collections"
+        android:icon="@drawable/ic_collection"
+        android:title="@string/userCollection" />
+    <item
+        android:id="@+id/nav_historyComment"
+        android:icon="@drawable/ic_comment"
+        android:title="@string/historyComment" />
+    <item
+        android:id="@+id/nav_help"
+        android:icon="@drawable/ic_help"
+        android:title="@string/help" />
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_logout"
+        android:title="@string/logout" />
+</menu>

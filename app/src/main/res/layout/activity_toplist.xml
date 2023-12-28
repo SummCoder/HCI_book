@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_topListBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/ic_back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/topBooks"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="@string/topBookList"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:columnCount="2"
+                android:rowCount="5">
+
+                <LinearLayout
+                    android:id="@+id/linear_chineseArt"
+                    android:width="0dp"
+                    android:height="60dp"
+                    android:background="@drawable/rounded_corner_gray_background"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+                    <TextView
+                        android:layout_margin="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="中国文学Top10"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="15dp"
+                        android:text="1. 如雪如山"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="15dp"
+                        android:text="2. 我本芬芳"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="3. 长安的荔枝"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linear_foreignArt"
+                    android:width="0dp"
+                    android:height="60dp"
+                    android:background="@drawable/rounded_corner_yellow_background"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+                    <TextView
+                        android:layout_margin="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="外国文学Top10"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="15dp"
+                        android:text="1. 当我们不再理解世界"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="15dp"
+                        android:text="2. 草坪的复仇"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="3. 形影不离"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linear_chineseNovel"
+                    android:width="0dp"
+                    android:height="60dp"
+                    android:background="@drawable/rounded_corner_red_background"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+                    <TextView
+                        android:layout_margin="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="中国小说Top10"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="15dp"
+                        android:text="1. 红楼梦"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="15dp"
+                        android:text="2. 三体全集"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="3. 三国演义"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linear_foreignNovel"
+                    android:width="0dp"
+                    android:height="60dp"
+                    android:background="@drawable/rounded_corner_blue_background"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+                    <TextView
+                        android:layout_margin="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="外国小说Top10"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="15dp"
+                        android:text="1. 卡拉马佐夫兄弟"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="15dp"
+                        android:text="2. 哈利波特"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="3. 冰与火之歌"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linear_history"
+                    android:width="0dp"
+                    android:height="60dp"
+                    android:background="@drawable/rounded_corner_green_dark_background"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+                    <TextView
+                        android:layout_margin="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="历史类图书Top10"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="15dp"
+                        android:text="1. 史记（全十册）"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="15dp"
+                        android:text="2. 东晋门阀政治"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="3. 南京大屠杀"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linear_biography"
+                    android:width="0dp"
+                    android:height="60dp"
+                    android:background="@drawable/rounded_corner_brown_background"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+                    <TextView
+                        android:layout_margin="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="传记类图书Top10"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="15dp"
+                        android:text="1. 天生有罪"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="15dp"
+                        android:text="2. 我在伊朗长大"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="3. 少年凯歌"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linear_movie"
+                    android:width="0dp"
+                    android:height="60dp"
+                    android:background="@drawable/rounded_corner_gray_background"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+                    <TextView
+                        android:layout_margin="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="电影类图书Top10"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="15dp"
+                        android:text="1. 雕刻时光"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="15dp"
+                        android:text="2. 少年凯歌"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="3. 世界电影史"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linear_drama"
+                    android:width="0dp"
+                    android:height="60dp"
+                    android:background="@drawable/rounded_corner_green_dark_background"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+                    <TextView
+                        android:layout_margin="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="戏剧类图书Top10"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="15dp"
+                        android:text="1. 莎士比亚全集"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="15dp"
+                        android:text="2. 老妇还乡"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="3. 契诃夫戏剧全集"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linear_whodunit"
+                    android:width="0dp"
+                    android:height="60dp"
+                    android:background="@drawable/rounded_corner_blue_background"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+                    <TextView
+                        android:layout_margin="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="推理类图书Top10"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="15dp"
+                        android:text="1. 福尔摩斯探案全集"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="15dp"
+                        android:text="2. 白夜行"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:singleLine="true"
+                        android:text="3. 阿加莎克里斯蒂..."
+                        android:textSize="15sp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linear_fiction"
+                    android:width="0dp"
+                    android:height="60dp"
+                    android:background="@drawable/rounded_corner_red_background"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical"
+                    android:layout_margin="8dp">
+                    <TextView
+                        android:layout_margin="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="科幻类图书Top10"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="15dp"
+                        android:text="1. 三体全集"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="15dp"
+                        android:text="2. 一九八四"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:singleLine="true"
+                        android:text="3. 银河帝国"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+            </GridLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

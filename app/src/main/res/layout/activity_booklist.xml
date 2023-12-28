@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_BookListBack"
+            android:layout_marginStart="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_back"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="@string/BookListRecommend" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/lightGray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/todayBookList"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:columnCount="2"
+                android:rowCount="3">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_bookList1"
+                    android:layout_width="0dp"
+                    android:layout_height="240dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="12dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="-50dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/halfblue_background"
+                            android:scaleType="centerCrop"
+                            android:alpha="0.5"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                        </LinearLayout>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/iv_bookListCover1"
+                            android:layout_width="90dp"
+                            android:layout_height="120dp"
+                            android:layout_marginStart="12dp"
+                            app:cardCornerRadius="5dp"
+                            android:layout_marginTop="-10dp"
+                            android:layout_centerVertical="true">
+
+                            <ImageView
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/book11"/>
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/iv_bookListCover1"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="绿色的书"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_bookList2"
+                    android:layout_width="0dp"
+                    android:layout_height="240dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="12dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="-50dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/halforange_background"
+                            android:scaleType="centerCrop"
+                            android:alpha="0.5"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                        </LinearLayout>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/iv_bookListCover2"
+                            android:layout_width="90dp"
+                            android:layout_height="120dp"
+                            android:layout_marginStart="12dp"
+                            app:cardCornerRadius="5dp"
+                            android:layout_marginTop="-10dp"
+                            android:layout_centerVertical="true">
+
+                            <ImageView
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/book12"/>
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/iv_bookListCover2"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="木心先生推荐书目"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_bookList3"
+                    android:layout_width="0dp"
+                    android:layout_height="240dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="12dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="-50dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/halfbrown_background"
+                            android:scaleType="centerCrop"
+                            android:alpha="0.5"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                        </LinearLayout>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/iv_bookListCover3"
+                            android:layout_width="90dp"
+                            android:layout_height="120dp"
+                            android:layout_marginStart="12dp"
+                            app:cardCornerRadius="5dp"
+                            android:layout_marginTop="-10dp"
+                            android:layout_centerVertical="true">
+
+                            <ImageView
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/book13"/>
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/iv_bookListCover3"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="西方思想史必知事件书目集"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_bookList4"
+                    android:layout_width="0dp"
+                    android:layout_height="240dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="12dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="-50dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/halfgray_background"
+                            android:scaleType="centerCrop"
+                            android:alpha="0.5"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                        </LinearLayout>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/iv_bookListCover4"
+                            android:layout_width="90dp"
+                            android:layout_height="120dp"
+                            android:layout_marginStart="12dp"
+                            app:cardCornerRadius="5dp"
+                            android:layout_marginTop="-10dp"
+                            android:layout_centerVertical="true">
+
+                            <ImageView
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/book14"/>
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/iv_bookListCover4"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="英国图书馆馆长推荐必读童书30本"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_bookList5"
+                    android:layout_width="0dp"
+                    android:layout_height="240dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="12dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="-50dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/halfred_background"
+                            android:scaleType="centerCrop"
+                            android:alpha="0.5"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                        </LinearLayout>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/iv_bookListCover5"
+                            android:layout_width="90dp"
+                            android:layout_height="120dp"
+                            android:layout_marginStart="12dp"
+                            app:cardCornerRadius="5dp"
+                            android:layout_marginTop="-10dp"
+                            android:layout_centerVertical="true">
+
+                            <ImageView
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/book15"/>
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/iv_bookListCover5"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="中国古代生活研究"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_bookList6"
+                    android:layout_width="0dp"
+                    android:layout_height="240dp"
+                    android:layout_columnWeight="1"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_margin="8dp"
+                    app:cardCornerRadius="12dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="-50dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/halfwhite_background"
+                            android:scaleType="centerCrop"
+                            android:alpha="0.5"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                        </LinearLayout>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/iv_bookListCover6"
+                            android:layout_width="90dp"
+                            android:layout_height="120dp"
+                            android:layout_marginStart="12dp"
+                            app:cardCornerRadius="5dp"
+                            android:layout_marginTop="-10dp"
+                            android:layout_centerVertical="true">
+
+                            <ImageView
+                                android:layout_width="90dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/book16"/>
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_below="@id/iv_bookListCover6"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:text="译文经典·精装本"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </GridLayout>
+
+            <!-- 空白视图，留白20dp -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

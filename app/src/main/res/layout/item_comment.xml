@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginStart="12dp"
+    android:layout_marginEnd="12dp"
+    android:paddingBottom="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <!-- 头像 -->
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_commentAvatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/avatar0"
+            app:riv_corner_radius_bottom_left="60dp"
+            app:riv_corner_radius_bottom_right="60dp"
+            app:riv_corner_radius_top_left="60dp"
+            app:riv_corner_radius_top_right="60dp" />
+
+        <!-- 用户名 -->
+        <TextView
+            android:id="@+id/tv_commentUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iv_commentAvatar"
+            android:layout_marginStart="10dp"
+            android:text="@string/Username"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp" />
+
+        <!-- 删除图标 -->
+        <ImageView
+            android:id="@+id/iv_deleteComment"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:src="@drawable/ic_delete"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_commentContent"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:lineSpacingExtra="4sp"
+        android:text="小时候读起来觉得好可笑。。。可是长大了知道这就是爱，舍弃自己最美好的东西去换来爱人最需要最想要得到的东西，鲜少人可以做到。"
+        android:textSize="14sp"
+        android:layout_height="wrap_content" />
+
+    <!-- 其他布局代码 -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_marginTop="12dp" />
+
+    <!-- 其他布局代码 -->
+
+</LinearLayout>

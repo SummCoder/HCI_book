@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/iv_headAvatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/avatar0"
+            app:riv_corner_radius_bottom_left="60dp"
+            app:riv_corner_radius_bottom_right="60dp"
+            app:riv_corner_radius_top_left="60dp"
+            app:riv_corner_radius_top_right="60dp" />
+
+        <!--用户名-->
+        <TextView
+            android:id="@+id/tv_headUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/Username"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bookDetailBackground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_communicationDetailBack"
+            android:layout_marginStart="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_back"/>
+        <TextView
+            android:id="@+id/tv_detailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="@string/activity_news3" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_communityDetailTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="当哲学邂逅文学|《爱的知识：写在哲学与文学之间》线上共读会"
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="23sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_broadcastDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_newsClass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/orange"
+                        android:textColor="@color/white"
+                        android:textSize="10sp"
+                        android:padding="2dp"
+                        android:text="@string/activity_news3" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tv_communityDetailDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:text="2023.12.08-01.08"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_communityDetailContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="30dp"
+                android:lineSpacingExtra="8sp"
+                android:textSize="16sp"
+                android:text="大家好，这里是广西师大出版社·豆瓣Club。
+
+今年世界哲学日之际，我们出版了美国当代哲学家玛莎·C. 努斯鲍姆专著《爱的知识：写在哲学与文学之间》。这部作品是努斯鲍姆哲学观集大成之作，也被作者本人称为其著作中译介难度最大的作品。《爱的知识》中文简体版本翻译编校工作历时五年，是这部重要著作的国内首度引进。
+
+本场共读会，我们邀请到本书责编、译者、译审老师以及两位资深书评人。2023年12月11日—2024年1月8日，五位嘉宾将与读者们共同开启为期一个月的《爱的知识》阅读之旅。
+
+
+努斯鲍姆，“当代哲学界最具创新和最有影响力的声音”，读者口中的哲学女王，一个很“新”的哲学家。她在当代哲学界备受瞩目，深受国内外主流媒体与专家学者的热议与好评，同时，载誉无数。在她身上找不到任何关于哲学家的刻板想象，但她又是这个时代最具影响力的哲学家之一。
+
+让我们先来通过一段视频认识一下她：
+
+
+【中英】玛莎·纳斯鲍姆和《善的脆弱性》 Martha Nussbaum - The Fragility of Goodness_哔哩哔哩_bilibili
+近年来，随着《善的脆弱性》《傲慢的堡垒》等作品的引进，她在国内也受到了广泛关注。
+
+努斯鲍姆尝试把哲学从“抽象的高度降到日常的话语和平常人性的丰富性当中“，其中最重要的一条路径就是去”倾听文学“，而《爱的知识：写在哲学与文学之间》就是这样一本备受学界关注的代表作。
+
+此次中文译本历时五年精心打磨，终于得以上世。相较于出版上的耗时，这本书的阅读也需要一定的时间周期，为此，我们决定用一个月的时间，与大家一起来读读和聊聊这本书。
+
+
+活动流程：
+共读作品：《爱的知识：写在哲学与文学之间》
+
+共读时间：2023年12月11日——2024年1月8日
+
+领读人：
+
+李敏：《爱的知识》责编  @叶浅
+
+领读嘉宾：
+
+李怡霖：《爱的知识》第一译者  @海德嗝儿
+
+哲学研究专业硕士，毕业于法国斯特拉斯堡大学哲学院。
+
+#暗蓝# ：译者、书评人  @暗蓝
+
+小波福娃（端木异）：撰稿人  @小波福娃
+
+端木异，社会文化议题写作者，曾在《澎湃新闻》《腾讯大家》等媒体发表过一系列关于女性、儿童的权益保护和相关立法的文章，也是一只十七斤的网红小猫咪（曾秃顶）的拥有者（微博@端木异，豆瓣@小波福娃）
+
+范昀：《爱的知识》译审  @光荣与梦想
+
+浙江大学传媒与国际文化学院国际文化学系教授。目前主要研究领域为：伦理学与美学、现当代英美文论、十八世纪欧洲美学史与思想史等。已出版专著《情感与正义：玛莎·努斯鲍姆的审美伦理世界》《批判的限度》《艺术与启蒙：十八世纪欧洲启蒙美学研究》等。
+
+
+主要交流方向：
+
+努斯鲍姆的哲学视野
+
+努斯鲍姆的文学书单
+
+努斯鲍姆的情感认知
+
+努斯鲍姆的生命思考
+
+讨论时间：
+
+12月16日（周六）19：00—20：00 李怡霖
+
+12月23日（周六）19：00—20：00 暗蓝
+
+12月30日（周六）19：00—20：00 小波福娃
+
+1月6日（周六）19：00—20：00 范昀
+
+参与方式：
+
+1、 评论区每日阅读打卡。
+
+2、 可以随时进行交流。
+
+3、 如果阅读过程中有疑问需要与领读嘉宾交流，可以以【提问】为前缀进行留言，我们会在当周内约定的领读嘉宾上线时间里与大家进行交流。
+
+4、 在共读过程中，完成阅读想要发表阅读感受，可以以【评论】为前缀进行留言。
+
+活动奖励：
+
+我们在活动结束后，将会从持续三周及以上打卡者或撰写阅读感受的读者中选择三位读者（符合规则的打卡者1名、撰写阅读感受者2名），各赠送广西师范大学出版社·北京贝贝特出品《寻梦与归来：敦煌宝藏离合史》一套。
+
+
+《寻梦与归来：敦煌宝藏离合史》
+刘诗平、孟宪实 著
+
+出版时间：2023.6
+
+定价：258.00元
+
+装帧：三册函盒套装
+
+一部走出学术圈、可读性极强的非虚构佳作
+
+一幅纵览敦煌学百年历程的全景式长卷
+
+一座沟通敦煌学专业学者与大众读者之间的桥梁
+
+
+※本次活动最终解释权归广西师范大学出版社·北京贝贝特所有。"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="@string/alreadyLast"
+                android:gravity="center"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

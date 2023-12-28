@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/iv_helpBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/help"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/lightGray">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="40dp"
+            android:text="@string/question"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+            <ListView
+                android:id="@+id/lv_help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/lightGray">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_height="40dp"
+            android:text="反馈问题区块给我们"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+            <ListView
+                android:id="@+id/lv_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

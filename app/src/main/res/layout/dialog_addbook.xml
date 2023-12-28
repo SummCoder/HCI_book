@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/et_bookId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="@string/bookId" />
+
+    <EditText
+        android:id="@+id/et_bookCover"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="@string/bookUri" />
+
+    <EditText
+        android:id="@+id/et_bookTitle"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="@string/bookTitle" />
+
+    <EditText
+        android:id="@+id/et_bookAuthor"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="@string/bookAuthor" />
+
+    <EditText
+        android:id="@+id/et_bookSummary"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="@string/bookSummary" />
+
+    <Button
+        android:id="@+id/bt_addNewBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/addBook" />
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Hci_book">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".user.RegisterActivity" />
+        <activity android:name=".user.ResetActivity" />
+        <activity android:name=".user.LoginActivity" />
+        <activity android:name=".book.BookDetailActivity" />
+        <activity android:name=".book.NewBooksActivity"/>
+        <activity android:name=".search.SearchPageActivity"/>
+        <activity android:name=".topList.TopListActivity"/>
+        <activity android:name=".readingNews.ReadingNewsActivity"/>
+        <activity android:name=".bookList.BookListActivity"/>
+        <activity android:name=".book.BookActivity"/>
+        <activity android:name=".comment.WriteCommentActivity"/>
+        <activity android:name=".readingNews.CommunicationDetailActivity"/>
+        <activity android:name=".readingNews.WriterDetailActivity"/>
+        <activity android:name=".readingNews.BroadcastDetailActivity"/>
+        <activity android:name=".bookList.BookListDetailActivity"/>
+        <activity android:name=".help.HelpActivity"/>
+        <activity android:name=".help.QuestionActivity"/>
+        <activity android:name=".help.FeedBackActivity"/>
+        <activity android:name=".home.CollectionActivity"/>
+        <activity android:name=".home.HistoryCommentActivity"/>
+        <activity android:name=".search.SearchActivity"/>
+    </application>
+
+</manifest>

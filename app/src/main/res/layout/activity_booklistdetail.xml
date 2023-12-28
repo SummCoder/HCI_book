@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/iv_bookListDetailBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_back" />
+        <TextView
+            android:id="@+id/tv_bookListName"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/bookListName"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"/>
+        <ImageView
+            android:id="@+id/iv_bookListDetailBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/book11"
+            android:scaleType="centerCrop"
+            android:alpha="0.5"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_bookListBooks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

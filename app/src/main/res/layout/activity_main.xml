@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/drawer_layout"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/iv_expand"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="12dp"
+                            android:src="@drawable/avatar0"
+                            app:riv_corner_radius_bottom_left="60dp"
+                            app:riv_corner_radius_bottom_right="60dp"
+                            app:riv_corner_radius_top_left="60dp"
+                            app:riv_corner_radius_top_right="60dp" />
+<!--                        <ImageView-->
+<!--                            android:id="@+id/iv_expand"-->
+<!--                            android:layout_width="30dp"-->
+<!--                            android:layout_height="30dp"-->
+<!--                            android:layout_margin="12dp"-->
+<!--                            android:src="@drawable/ic_expand"/>-->
+                        <EditText
+                            android:id="@+id/et_search"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="18dp"
+                            android:layout_marginEnd="12dp"
+                            android:background="@drawable/search_background"
+                            android:hint="          根据书名、作者搜索"
+                            android:imeOptions="actionSearch"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:singleLine="true" />
+                    </LinearLayout>
+
+                    <!--        顶部四个按钮-->
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:columnCount="4"
+                        android:layout_marginTop="15dp"
+                        android:rowCount="1">
+                        <Button
+                            android:id="@+id/bt_search"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_columnWeight="1"
+                            android:text="@string/search"
+                            android:textSize="16sp"
+                            android:drawableTop="@drawable/ic_search"
+                            android:background="@color/white" />
+                        <Button
+                            android:id="@+id/bt_top"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_columnWeight="1"
+                            android:text="@string/top"
+                            android:textSize="16sp"
+                            android:drawableTop="@drawable/ic_toplist"
+                            android:background="@color/white"/>
+                        <Button
+                            android:id="@+id/bt_activity"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_columnWeight="1"
+                            android:text="@string/activity"
+                            android:textSize="16sp"
+                            android:drawableTop="@drawable/activity"
+                            android:background="@color/white"/>
+                        <Button
+                            android:id="@+id/bt_book"
+                            android:layout_width="0dp"
+                            android:layout_height="60dp"
+                            android:layout_columnWeight="1"
+                            android:text="@string/BookList"
+                            android:textSize="16sp"
+                            android:drawableTop="@drawable/ic_booklist"
+                            android:background="@color/white"/>
+                    </GridLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="23sp"
+                            android:textStyle="bold"
+                            android:text="@string/newBooks"/>
+
+                        <Button
+                            android:id="@+id/bt_showAllNewBooks"
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:text="@string/all"
+                            android:textSize="15sp"
+                            android:background="@color/white"
+                            android:drawableEnd="@drawable/enter"
+                            android:textColor="@color/black"/>
+                    </RelativeLayout>
+
+
+                    <com.youth.banner.Banner
+                        android:id="@+id/banner_newBooks"
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        app:banner_radius="15dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        app:banner_loop_time="2000"
+                        android:clickable="true" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/white">
+                        <TextView
+                            android:layout_marginStart="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="23sp"
+                            android:textStyle="bold"
+                            android:text="@string/recommendedBooks"/>
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/lv_recommended"
+                        android:layout_margin="6dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/iv_toTop"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="15dp"
+                android:background="@drawable/ic_backtotop"
+                android:text="@string/backToTop" />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <!-- 侧边展开栏 -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:headerLayout="@layout/head_layout"
+        android:layout_gravity="start"
+        app:menu="@menu/drawer_menu"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

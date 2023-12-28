@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bookDetailBackground">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/iv_bookDetailBack"
+                    android:layout_marginStart="10dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_back"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:text="图书详情" />
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="169dp"
+                    android:orientation="horizontal"
+                    android:background="@color/bookDetailBackground1"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/iv_bookDetailCover"
+                        android:layout_width="80dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="5dp"
+                        android:src="@drawable/book1" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:layout_margin="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_bookDetailName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="中世纪感官文化史"
+                            android:textColor="@color/black"
+                            android:textSize="20sp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cv_bookdetail"
+                            android:layout_width="wrap_content"
+                            android:layout_below="@id/tv_bookDetailName"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/tv_classification"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/orange"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                android:padding="2dp"
+                                android:text="@string/newBooks" />
+                        </androidx.cardview.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/tv_bookDetailAuthor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/cv_bookdetail"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="20dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:text="作者: [美] 理查德·G. 纽豪瑟 / 理查德·G.纽豪瑟" />
+
+                        <ImageView
+                            android:id="@+id/iv_favorite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/ic_collection" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/summary"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textSize="23sp"/>
+
+            <TextView
+                android:id="@+id/tv_bookDetailContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:lineSpacingExtra="8sp"
+                android:textSize="16sp"
+                android:text="东野圭吾万千书迷心中的无冕之王  周刊文春推理小说年度BEST10第1名  本格推理小说年度BEST10第2名  《白夜行》是东野圭吾迄今口碑最好的长篇杰作，具备经典名著的一切要素：  一宗离奇命案牵出跨度近20年步步惊心的故事：悲凉的爱情、吊诡的命运、令人发指的犯罪、复杂人性的对决与救赎……  -------------------------------------------------------------------  1973年，大阪的一栋废弃建筑中发现一名遭利器刺死的男子。案件扑朔迷离，悬而未决。  此后20年间，案件滋生出的恶逐渐萌芽生长，绽放出恶之花。案件相关者的人生逐渐被越来越重的阴影笼罩……  “我的天空里没有太阳，总是黑夜，但并不暗，因为有东西代替了太阳。虽然没有太阳那么明亮，但对我来说已经足够。  凭借着这份光，我便能把黑夜当成白天。  我从来就没有太阳，所以不怕失去。”  “只希望能手牵手在太阳下散步”，这句象征本书故事内核的绝望念想，有如一个美丽的幌子，随着无数凌乱、压抑、悲凉的事件片段如纪录片一样一一还原，最后一丝温情也被完全抛弃，万千读者在一曲救赎罪恶的爱情之中悲切动容。"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:orientation="vertical"
+                    android:background="@color/bookDetailBackground1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/comments"
+                        android:layout_margin="5dp"
+                        android:textStyle="bold"
+                        android:textSize="23sp" />
+
+                    <TextView
+                        android:id="@+id/tv_noComment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/noComment"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:visibility="gone"
+                        android:textSize="12sp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_bookDetail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:divider="@android:color/darker_gray"
+                            android:dividerHeight="1dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="@string/alreadyLast"
+                android:gravity="center"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <ImageView
+        android:id="@+id/iv_toWrite"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:background="@drawable/ic_write"
+        android:text="@string/writeComment" />
+
+</FrameLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginStart="5dp"
+            android:id="@+id/iv_collectionCover"
+            android:layout_width="80dp"
+            android:layout_height="150dp"
+            android:src="@drawable/book1"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:id="@+id/tv_collectionBookName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="中世纪感官文化史"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tv_collectionAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="作者: [美] 理查德·G. 纽豪瑟 / 理查德·G.纽豪瑟"/>
+
+            <TextView
+                android:id="@+id/tv_collectionBookContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:text="理解感官对于理解中世纪是不可或缺的，因为在这一时期的思想架构和文化实践的发展中，对诸感官的理论探讨和实际运用扮演着至关重要的角色。在漫长的中世纪千年里，人们对于感官的认知与如今并不相同：例如，言说就被认为是嘴巴的感官之一；视觉和听觉并不总是最主要的感官；对于医学界来说，味觉更具有决定性……感官也不仅仅是被动的感受器官，人们认为它们在感知过程中发挥着积极的作用，也是每个人的道德身份形..."
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_collectionDelete"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_delete"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="8dp" />
+
+</RelativeLayout>
